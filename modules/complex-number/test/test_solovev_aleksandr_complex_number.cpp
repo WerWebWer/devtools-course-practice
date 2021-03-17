@@ -38,7 +38,7 @@ TEST_P(Solovev_Aleksandr_ComplexNumberTest_Parametrized, Test_Multiply) {
 };
 
 INSTANTIATE_TEST_CASE_P(/**/, Solovev_Aleksandr_ComplexNumberTest_Parametrized,
-                        testing::Combine(
+                        testing::Values(
   testing::Values(10.0, 3.0, 13.0, 3.0),
   testing::Values(0.0, 4.0, 0.0, 1.0),
   testing::Values(2.0, 0.0, 13.5, 0.0),
@@ -65,7 +65,7 @@ TEST_P(Solovev_Aleksandr_ComplexNumberTest_Add_Parametrized, Test_Add) {
 
 INSTANTIATE_TEST_CASE_P(/**/,
                         Solovev_Aleksandr_ComplexNumberTest_Add_Parametrized,
-                        testing::Combine(
+                        testing::Values(
   testing::Values(10.0, 3.0, 13.0, 3.0),
   testing::Values(0.0, 4.0, 0.0, 1.0),
   testing::Values(2.0, 0.0, 13.5, 0.0),
