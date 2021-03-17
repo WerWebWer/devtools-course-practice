@@ -32,7 +32,6 @@ TEST_P(Solovev_Aleksandr_ComplexNumberTest_Parametrized, Test_Multiply) {
     ComplexNumber c1(re1, im1);
     ComplexNumber c2(re2, im2);
     ComplexNumber result = c1 * c2;
-
     EXPECT_EQ(resultRe, result.getRe());
     EXPECT_EQ(resultIm, result.getIm());
 };
